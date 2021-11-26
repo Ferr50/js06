@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Hamburgão</h1>
+    
+    <img src="hamburg.png" id="image">
+    <div id="menu">
+    <form>
+        <p>Escolha o tipo do seu pão: </p>
+        <input type="radio" id="pf" name="brd" value="Pao Frances">
+        <label for="pf">Pão Francês</label><br>
+        <input type="radio" id="pa" name="brd" value="Pao Australiano">
+        <label for="pa">Pão Australiano</label><br>
+        <input type="radio" id="pb" name="brd" value="Pao de Brioche">
+        <label for="pb">Pão de Brioche</label>    
+    </form>
+
+    <form>
+        <p>Escolha o tipo de carne: </p>
+        <input type="radio" id="hp" name="hbrg" value="Hamburguer de Picanha">
+        <label for="hp">Hamburguer de Picanha</label><br>
+        <input type="radio" id="hc" name="hbrg" value="Hamburguer de Costela">
+        <label for="hc">Hamburguer de Costela</label><br>
+        <input type="radio" id="hv" name="hbrg" value="Hamburguer Vegano">
+        <label for="hv">Hamburguer Vegano</label>    
+    </form>
+
+    <form>
+        <p>Escolha sua salada: </p>
+        <input type="radio" id="alf" name="sld" value="Alface">
+        <label for="alf">Alface</label><br>
+        <input type="radio" id="tm" name="sld" value="Tomate">
+        <label for="tm">Tomate</label><br>
+        <input type="radio" id="ss" name="sld" value="Sem Salada">
+        <label for="ss">Sem Salada</label>    
+    </form>
+
+    <form>
+        <p>Escolha o seu queijo: </p>
+        <input type="radio" id="mss" name="qjo" value="Mussarela">
+        <label for="mss">Queijo Mussarela</label><br>
+        <input type="radio" id="pra" name="qjo" value="Prato">
+        <label for="pea">Queijo Prato</label><br>
+        <input type="radio" id="ched" name="qjo" value="Cheddar">
+        <label for="ched">Queijo Cheddar</label>    
+    </form>
+    </div>
+
+    <button id="order">Fazer Pedido</button>
+
+    <div id="orderChef" hidden>
+        <p id="total"></p>
+        <ul>
+            <p id="detalhes"></p>
+            <li id="01"></li>
+            <li id="02"></li>
+            <li id="03"></li>
+            <li id="04"></li>
+        </ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
